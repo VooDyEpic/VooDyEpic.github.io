@@ -1,0 +1,255 @@
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --header-color: #2c3e50;
+    --nav-color: #34495e;
+    --nav-text: #ecf0f1;
+    --card-bg: #fff;
+    --card-shadow: rgba(0,0,0,0.1);
+    --accent-color: #e74c3c;
+    --link-color: #2980b9;
+}
+
+.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --header-color: #121212;
+    --nav-color: #1e1e1e;
+    --nav-text: #f0f0f0;
+    --card-bg: #252525;
+    --card-shadow: rgba(0,0,0,0.3);
+    --accent-color: #c0392b;
+    --link-color: #3498db;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    min-height: 100vh;
+}
+
+.ad-left, .ad-right {
+    background-color: var(--card-bg);
+    padding: 10px;
+    box-shadow: 0 0 5px var(--card-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.ad-content {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.container {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--header-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--nav-text);
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--nav-color);
+    border: none;
+    color: var(--nav-text);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+nav {
+    background-color: var(--nav-color);
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: var(--nav-text);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav a:hover, nav a.active {
+    background-color: var(--accent-color);
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--card-shadow);
+}
+
+.content-section {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--card-shadow);
+}
+
+h2 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--card-shadow);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Character specific styles */
+.character-abilities {
+    margin-top: 1rem;
+}
+
+.ability {
+    background-color: var(--nav-color);
+    color: var(--nav-text);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+.ability h4 {
+    margin-bottom: 0.3rem;
+}
+
+footer {
+    background-color: var(--header-color);
+    color: var(--nav-text);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    body {
+        grid-template-columns: 100%;
+    }
+    
+    .ad-left, .ad-right {
+        display: none;
+    }
+    
+    .container {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 0.5rem 0;
+    }
+    
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .content-section {
+        padding: 1rem;
+    }
+}
