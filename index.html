@@ -3,58 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divinity: Original Sin 2 - Fan Site</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Divinity: Original Sin 2 - Главная</title>
+    <link rel="stylesheet" href="/styles/style1.css">
 </head>
 <body>
-    <div class="ad-left">
-        <div class="ad-content">Sponsored by Lohse's Tavern</div>
-    </div>
-    
-    <div class="container">
-        <header>
+    <header>
+        <div class="container">
             <h1>Divinity: Original Sin 2</h1>
-            <p>The Ultimate RPG Experience</p>
-            <button class="theme-toggle" id="themeToggle">Dark Mode</button>
-        </header>
-        
-        <nav>
-            <ul>
-                <li><a href="#" class="active" id="homeLink">Home</a></li>
-                <li><a href="#" id="classesLink">Classes</a></li>
-                <li><a href="#" id="itemsLink">Items</a></li>
-                <li><a href="#" id="charactersLink">Characters</a></li>
-            </ul>
-        </nav>
-        
-        <main id="mainContent">
-            <!-- Home content will be loaded here by default -->
-            <div class="hero">
-                <img src="https://via.placeholder.com/1200x400/2c3e50/ecf0f1?text=Divinity+Original+Sin+2" alt="Divinity Original Sin 2 Banner">
-            </div>
-            
-            <div class="content-section">
-                <h2>Welcome to Rivellon</h2>
-                <p>Divinity: Original Sin II is a single- and multiplayer top-down, party-based role-playing game with pen & paper RPG-like levels of freedom. It features turn-based combat, a strong focus on systematic gameplay and a well-grounded narrative.</p>
-                <p>Divinity: Original Sin II is the sequel to the critically acclaimed Divinity: Original Sin, winner of over 150 Game of the Year awards and nominations.</p>
-            </div>
-            
-            <div class="content-section">
-                <h2>The Story</h2>
-                <p>The game is set in the world of Rivellon, years after the first Divinity: Original Sin. The Voidwoken, demonic creatures of the Void, have invaded, and the Magisters—the religious military order of the Divine—are rounding up and imprisoning anyone with the potential to become a Sourcerer, as their powers are believed to be the cause of the Voidwoken invasion.</p>
-                <p>You are a Sourcerer, captured by the Magisters and placed on a prison ship heading to the Fort Joy island prison. When the ship is attacked by a kraken-like Voidwoken creature, you escape and wash ashore on Fort Joy. From there, you must find a way to escape the island, all while learning more about your powers as a Godwoken—one who has the potential to become the next Divine.</p>
-            </div>
-        </main>
-        
-        <footer>
-            <p>&copy; 2023 Divinity: Original Sin 2 Fan Site. Not affiliated with Larian Studios.</p>
-        </footer>
-    </div>
-    
-    <div class="ad-right">
-        <div class="ad-content">Try our new Source Hammer!</div>
-    </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="page/classes.html">Классы</a></li>
+                    <li><a href="page/characters.html">Персонажи</a></li>
+                    <li><a href="page/lore.html">Лор</a></li>
+                    <li><a href="page/reviews.html">Оценки</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">Сменить тему</button>
+        </div>
+    </header>
 
-    <script src="script.js"></script>
+    <main class="container">
+        <section class="intro">
+            <h2>О игре</h2>
+            <p>Divinity: Original Sin II — это ролевая игра с пошаговой боевой системой, разработанная и изданная Larian Studios. Это третья игра в серии Divinity и сиквел Divinity: Original Sin 2014 года.</p>
+            <p>Игра была выпущена для Windows в сентябре 2017 года, а позже портирована на PlayStation 4, Xbox One, macOS и Nintendo Switch.</p>
+        </section>
+
+        <section class="features">
+            <h2>Ключевые особенности</h2>
+            <ul>
+                <li>Глубокий, тактический пошаговый бой</li>
+                <li>Свобода выбора и последствий</li>
+                <li>Совместная игра до 4 игроков</li>
+                <li>Режим "Гамемастер" для создания своих приключений</li>
+                <li>Богатый мир с детализированным лором</li>
+            </ul>
+        </section>
+
+        <section class="gameplay">
+            <h2>Игровой процесс</h2>
+            <p>Игра предлагает огромную свободу в прохождении. Вы можете решать квесты множеством способов, комбинировать навыки неожиданными способами и даже играть за разных персонажей с уникальными историями.</p>
+            <p>Боевая система сочетает традиционные RPG-механики с инновационными элементами, такими как взаимодействие поверхностей и элементов.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Фан-сайт Divinity: Original Sin 2. Неофициальный ресурс.</p>
+            <p>Все права на игру принадлежат Larian Studios.</p>
+        </div>
+    </footer>
 </body>
 </html>
