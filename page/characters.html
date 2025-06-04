@@ -146,34 +146,12 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Фан-сайт Divinity: Original Sin 2. Неофициальный ресурс.</p>
+            <p>&copy; 2025 Фан-сайт Divinity: Original Sin 2. Неофициальный ресурс.</p>
             <p>Все права на игру принадлежат Larian Studios.</p>
         </div>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.querySelectorAll(".toggle-info").forEach((btn) => {
-                btn.addEventListener("click", () => {
-                    const info = btn.nextElementSibling;
-                    info.classList.toggle("active");
-                    btn.textContent = info.classList.contains("active") ? "Скрыть описание" : "Показать описание";
-                });
-            });
-
-            // Прокрутка к карточке по клику в карусели
-            document.querySelectorAll(".carousel-nav").forEach(link => {
-                link.addEventListener("click", e => {
-                    e.preventDefault();
-                    const targetId = link.getAttribute("href");
-                    const target = document.querySelector(targetId);
-                    if (target) {
-                        target.scrollIntoView({ behavior: "smooth", block: "start" });
-                    }
-                });
-            });
-        });
-    </script>
+   <script src="../main/js/characters.js"></script>
     <script src="../main/theme.js"></script>
 
 </body>
