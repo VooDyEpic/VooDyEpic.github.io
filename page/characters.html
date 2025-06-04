@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divinity: Original Sin 2 - Персонажи</title>
-    <link rel="stylesheet" href="styles/style1.css">
+    <link rel="stylesheet" href="../styles/style1.css">
 </head>
 <body>
     <header>
@@ -19,96 +19,124 @@
                     <li><a href="reviews.html">Оценки</a></li>
                 </ul>
             </nav>
-            <button id="theme-toggle">Сменить тему</button>
+<button id="theme-toggle" aria-label="Сменить тему">🌙</button>
         </div>
     </header>
 
     <main class="container">
         <h2>Персонажи Origin</h2>
         <p>В Divinity: Original Sin 2 вы можете играть как за своего собственного персонажа, так и за одного из шести уникальных персонажей Origin с собственной историей, целями и способностями.</p>
-        
+
+        <!-- Карусель персонажей -->
+       <div class="carousel-track">
+    <a href="#red-prince"><img src="../images/images.jpg" alt="Красный Принц"></a>
+    <a href="#lohse"><img src="../images/5427436240a138a5ae2cc56fac3829a4.jpg" alt="Ло"></a>
+    <a href="#fane"><img src="../images/0d0aec27c97af640dbc107d75c66df9b.jpg" alt="Фэйн"></a>
+    <a href="#sebille"><img src="../images/80f5ff459e2a3dbcc0fcc0642c32c698.jpg" alt="Себилла"></a>
+    <a href="#beast"><img src="../images/загрузка.jpg" alt="Зверь"></a>
+    <a href="#ifan"><img src="../images/7070696e2b9dd0f61241165dde41658c.jpg" alt="Ифан"></a>
+  </div>
+
         <section class="character-list">
-            <article class="character-card">
-                <div class="character-image-placeholder" data-character="red-prince"></div>
+            <article class="character-card" id="red-prince">
+                <img src="../images/images.jpg" alt="Красный Принц" class="character-image">
                 <h3>Красный Принц</h3>
                 <p class="character-race">Раса: Ящер</p>
-                <div class="character-story">
-                    <h4>История</h4>
-                    <p>Бывший наследник империи ящеров, лишенный трона и памяти. Путешествует с демоницей, которая знает его прошлое.</p>
-                </div>
-                <div class="character-ability">
-                    <h4>Уникальная способность</h4>
-                    <p>Договор с демоном: может призывать демоницу Садию для помощи в бою.</p>
+                <button class="toggle-info">Показать описание</button>
+                <div class="character-info">
+                    <div class="character-story">
+                        <h4>История</h4>
+                        <p>Бывший наследник империи ящеров, лишенный трона и памяти. Путешествует с демоницей, которая знает его прошлое.</p>
+                    </div>
+                    <div class="character-ability">
+                        <h4>Уникальная способность</h4>
+                        <p>Договор с демоном: может призывать демоницу Садию для помощи в бою.</p>
+                    </div>
                 </div>
             </article>
 
-            <article class="character-card">
-                <div class="character-image-placeholder" data-character="lohse"></div>
+            <article class="character-card" id="lohse">
+                <img src="../images/5427436240a138a5ae2cc56fac3829a4.jpg" alt="Ло" class="character-image">
                 <h3>Ло</h3>
                 <p class="character-race">Раса: Человек</p>
-                <div class="character-story">
-                    <h4>История</h4>
-                    <p>Бард, одержимая демоном, который постепенно берет контроль над ее телом и разумом.</p>
-                </div>
-                <div class="character-ability">
-                    <h4>Уникальная способность</h4>
-                    <p>Мадемуазель: может убеждать NPC с помощью музыки и харизмы.</p>
+                <button class="toggle-info">Показать описание</button>
+                <div class="character-info">
+                    <div class="character-story">
+                        <h4>История</h4>
+                        <p>Бард, одержимая демоном, который постепенно берет контроль над ее телом и разумом.</p>
+                    </div>
+                    <div class="character-ability">
+                        <h4>Уникальная способность</h4>
+                        <p>Мадемуазель: может убеждать NPC с помощью музыки и харизмы.</p>
+                    </div>
                 </div>
             </article>
 
-            <article class="character-card">
-                <div class="character-image-placeholder" data-character="fane"></div>
+            <article class="character-card" id="fane">
+                <img src="../images/0d0aec27c97af640dbc107d75c66df9b.jpg" alt="Фэйн" class="character-image">
                 <h3>Фан</h3>
                 <p class="character-race">Раса: Нежить</p>
-                <div class="character-story">
-                    <h4>История</h4>
-                    <p>Таинственный нежить, пробудившийся после тысячелетнего сна. Ищет ответы о своем прошлом и исчезнувшей расе Вечных.</p>
-                </div>
-                <div class="character-ability">
-                    <h4>Уникальная способность</h4>
-                    <p>Игра в кости: может переиграть неудачные проверки.</p>
+                <button class="toggle-info">Показать описание</button>
+                <div class="character-info">
+                    <div class="character-story">
+                        <h4>История</h4>
+                        <p>Таинственный нежить, пробудившийся после тысячелетнего сна. Ищет ответы о своем прошлом и исчезнувшей расе Вечных.</p>
+                    </div>
+                    <div class="character-ability">
+                        <h4>Уникальная способность</h4>
+                        <p>Игра в кости: может переиграть неудачные проверки.</p>
+                    </div>
                 </div>
             </article>
 
-            <article class="character-card">
-                <div class="character-image-placeholder" data-character="sebille"></div>
+            <article class="character-card" id="sebille">
+                <img src="../images/80f5ff459e2a3dbcc0fcc0642c32c698.jpg" alt="Себилла" class="character-image">
                 <h3>Себилла</h3>
                 <p class="character-race">Раса: Эльф</p>
-                <div class="character-story">
-                    <h4>История</h4>
-                    <p>Бывшая рабыня, сбежавшая от жестокого хозяина. Ищет мести тем, кто поработил ее народ.</p>
-                </div>
-                <div class="character-ability">
-                    <h4>Уникальная способность</h4>
-                    <p>Поедание плоти: может поглощать плоть мертвых, чтобы узнавать их воспоминания.</p>
+                <button class="toggle-info">Показать описание</button>
+                <div class="character-info">
+                    <div class="character-story">
+                        <h4>История</h4>
+                        <p>Бывшая рабыня, сбежавшая от жестокого хозяина. Ищет мести тем, кто поработил ее народ.</p>
+                    </div>
+                    <div class="character-ability">
+                        <h4>Уникальная способность</h4>
+                        <p>Поедание плоти: может поглощать плоть мертвых, чтобы узнавать их воспоминания.</p>
+                    </div>
                 </div>
             </article>
 
-            <article class="character-card">
-                <div class="character-image-placeholder" data-character="beast"></div>
+            <article class="character-card" id="beast">
+                <img src="../images/загрузка.jpg" alt="Бист" class="character-image">
                 <h3>Бист</h3>
                 <p class="character-race">Раса: Гном</p>
-                <div class="character-story">
-                    <h4>История</h4>
-                    <p>Бывший пират, разыскиваемый за убийство королевы. На самом деле невиновен и пытается очистить свое имя.</p>
-                </div>
-                <div class="character-ability">
-                    <h4>Уникальная способность</h4>
-                    <p>Пиратская удача: повышенный шанс критического удара в ближнем бою.</p>
+                <button class="toggle-info">Показать описание</button>
+                <div class="character-info">
+                    <div class="character-story">
+                        <h4>История</h4>
+                        <p>Бывший пират, разыскиваемый за убийство королевы. На самом деле невиновен и пытается очистить свое имя.</p>
+                    </div>
+                    <div class="character-ability">
+                        <h4>Уникальная способность</h4>
+                        <p>Пиратская удача: повышенный шанс критического удара в ближнем бою.</p>
+                    </div>
                 </div>
             </article>
 
-            <article class="character-card">
-                <div class="character-image-placeholder" data-character="ifan"></div>
+            <article class="character-card" id="ifan">
+                <img src="../images/7070696e2b9dd0f61241165dde41658c.jpg" alt="Ифан бен-Мезд" class="character-image">
                 <h3>Ифан бен-Мезд</h3>
                 <p class="character-race">Раса: Человек</p>
-                <div class="character-story">
-                    <h4>История</h4>
-                    <p>Бывший наемник Ордена Источника, разочаровавшийся в своих бывших хозяевах. Имеет связь с волками и духами природы.</p>
-                </div>
-                <div class="character-ability">
-                    <h4>Уникальная способность</h4>
-                    <p>Дух волка: может призывать волка-компаньона в бою.</p>
+                <button class="toggle-info">Показать описание</button>
+                <div class="character-info">
+                    <div class="character-story">
+                        <h4>История</h4>
+                        <p>Бывший наемник Ордена Источника, разочаровавшийся в своих бывших хозяевах. Имеет связь с волками и духами природы.</p>
+                    </div>
+                    <div class="character-ability">
+                        <h4>Уникальная способность</h4>
+                        <p>Дух волка: может призывать волка-компаньона в бою.</p>
+                    </div>
                 </div>
             </article>
         </section>
@@ -121,6 +149,30 @@
         </div>
     </footer>
 
-    <script src="js/characters.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".toggle-info").forEach((btn) => {
+                btn.addEventListener("click", () => {
+                    const info = btn.nextElementSibling;
+                    info.classList.toggle("active");
+                    btn.textContent = info.classList.contains("active") ? "Скрыть описание" : "Показать описание";
+                });
+            });
+
+            // Прокрутка к карточке по клику в карусели
+            document.querySelectorAll(".carousel-nav").forEach(link => {
+                link.addEventListener("click", e => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute("href");
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        target.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="../main/theme.js"></script>
+
 </body>
 </html>
