@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Тест: Какой класс тебе подойдёт?</title>
+  <link rel="stylesheet" href="/styles/style1.css"/>
+</head>
+<body>
+    <header>
+    <div class="container">
+      <h1>Divinity: Original Sin 2</h1>
+      <nav>
+        <ul>
+                                <li><a href="../index.html">Главная</a></li>
+
+          <li><a href="classes.html">Классы</a></li>
+          <li><a href="characters.html">Персонажи</a></li>
+          <li><a href="lore.html">Лор</a></li>
+          <li><a href="reviews.html">Оценки</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Сменить тему">🌙</button>
+    </div>
+  </header>
+  <div class="header-wrapper">
+    <header>
+      <h1>Какой класс тебе больше подойдёт?</h1>
+    </header>
+   
+  </div>
+
+  <main class="main-content container">
+    <section class="content-section">
+      <h2>Пройди тест</h2>
+      <form id="quiz-form">
+        <div class="question">
+          <p>1. Какой стиль боя тебе ближе?</p>
+          <label><input type="radio" name="q1" value="warrior" required> Ближний бой</label><br>
+          <label><input type="radio" name="q1" value="mage"> Магия</label><br>
+          <label><input type="radio" name="q1" value="archer"> Дальний бой</label>
+        </div>
+
+        <div class="question">
+          <p>2. Что для тебя важнее в команде?</p>
+          <label><input type="radio" name="q2" value="mage" required> Контроль и поддержка</label><br>
+          <label><input type="radio" name="q2" value="archer"> Быстрая атака</label><br>
+          <label><input type="radio" name="q2" value="warrior"> Защита союзников</label>
+        </div>
+
+        <div class="question">
+          <p>3. Какая стихия тебе ближе?</p>
+          <label><input type="radio" name="q3" value="mage" required> Огонь / Лёд</label><br>
+          <label><input type="radio" name="q3" value="warrior"> Земля / Камень</label><br>
+          <label><input type="radio" name="q3" value="archer"> Воздух / Природа</label>
+        </div>
+
+        <button type="submit" class="toggle-info">Узнать результат</button>
+      </form>
+
+      <div id="result" class="character-info" style="margin-top: 20px;"></div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 RPG Quiz. Все права защищены.
+  </footer>
+    <script src="/main/theme.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

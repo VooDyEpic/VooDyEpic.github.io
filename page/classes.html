@@ -17,9 +17,11 @@
                     <li><a href="characters.html">Персонажи</a></li>
                     <li><a href="lore.html">Лор</a></li>
                     <li><a href="reviews.html">Оценки</a></li>
+                                                  <li><a href="test.html"> Тест</a></li>
+
                 </ul>
             </nav>
-<button id="theme-toggle" aria-label="Сменить тему">🌙</button>
+            <button id="theme-toggle" aria-label="Сменить тему">🌙</button>
         </div>
     </header>
 
@@ -30,19 +32,28 @@
             <h3>Боевые классы</h3>
             <div class="class-grid">
                 <div class="class-card">
-                    <div class="class-image-placeholder" data-image="warrior"></div>
+                    <img src="../images/warrios.jpg" alt="Воин" class="class-image-toggle">
                     <h4>Воин</h4>
                     <p>Специализируется на ближнем бою с тяжелым оружием и доспехами.</p>
+                    <div class="class-details hidden">
+                        <p>Воин обладает высокой физической броней и способностями контроля, такими как провокация и оглушение.</p>
+                    </div>
                 </div>
                 <div class="class-card">
-                    <div class="class-image-placeholder" data-image="rogue"></div>
+                    <img src="../images/разбойник.jpg" alt="Разбойник" class="class-image-toggle">
                     <h4>Разбойник</h4>
                     <p>Использует скрытность и критические удары для уничтожения врагов.</p>
+                    <div class="class-details hidden">
+                        <p>Разбойник быстро перемещается по полю боя и наносит высокий урон в спину врагу.</p>
+                    </div>
                 </div>
                 <div class="class-card">
-                    <div class="class-image-placeholder" data-image="ranger"></div>
+                    <img src="../images/рейнджер.jpg" alt="Рейнджер" class="class-image-toggle">
                     <h4>Рейнджер</h4>
                     <p>Мастер дальнего боя с луками и арбалетами.</p>
+                    <div class="class-details hidden">
+                        <p>Рейнджер может использовать ловушки и применять отравленные или огненные стрелы.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -51,19 +62,28 @@
             <h3>Магические классы</h3>
             <div class="class-grid">
                 <div class="class-card">
-                    <div class="class-image-placeholder" data-image="wizard"></div>
+                    <img src="../images/волшебник.jpg" alt="Волшебник" class="class-image-toggle">
                     <h4>Волшебник</h4>
                     <p>Контролирует элементы огня, воды, воздуха и земли.</p>
+                    <div class="class-details hidden">
+                        <p>Может наносить массовый урон и изменять ландшафт с помощью элементальных заклинаний.</p>
+                    </div>
                 </div>
                 <div class="class-card">
-                    <div class="class-image-placeholder" data-image="necromancer"></div>
+                    <img src="../images/некромант.jpg" alt="Некромант" class="class-image-toggle">
                     <h4>Некромант</h4>
                     <p>Использует темную магию и призывает мертвых.</p>
+                    <div class="class-details hidden">
+                        <p>Восстанавливает здоровье, поглощая жизни врагов, и может поднимать павших как союзников.</p>
+                    </div>
                 </div>
                 <div class="class-card">
-                    <div class="class-image-placeholder" data-image="summoner"></div>
+                    <img src="../images/призыватель.jpg" alt="Призыватель" class="class-image-toggle">
                     <h4>Призыватель</h4>
                     <p>Призывает существ для помощи в бою.</p>
+                    <div class="class-details hidden">
+                        <p>Существа призываются в зависимости от поверхности, на которой они появляются, что делает стиль гибким.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -72,19 +92,28 @@
             <h3>Гибридные классы</h3>
             <div class="class-grid">
                 <div class="class-card">
-                    <div class="class-image-placeholder" data-image="battlemage"></div>
+                    <img src="../images/боевоймаг.jpg" alt="Боевой маг" class="class-image-toggle">
                     <h4>Боевой маг</h4>
                     <p>Сочетает магию и ближний бой.</p>
+                    <div class="class-details hidden">
+                        <p>Эффективен в создании магических эффектов в гуще сражения, усиливая свои удары стихиями.</p>
+                    </div>
                 </div>
                 <div class="class-card">
-                    <div class="class-image-placeholder" data-image="cleric"></div>
+                    <img src="../images/жрец.jpg" alt="Жрец" class="class-image-toggle">
                     <h4>Жрец</h4>
                     <p>Исцеляет союзников и наносит урон нежити.</p>
+                    <div class="class-details hidden">
+                        <p>Идеален для поддержки команды — лечит, воскрешает и наносит урон проклятым существам.</p>
+                    </div>
                 </div>
                 <div class="class-card">
-                    <div class="class-image-placeholder" data-image="shadowblade"></div>
+                    <img src="../images/клинок.jpg" alt="Теневой клинок" class="class-image-toggle">
                     <h4>Теневой клинок</h4>
                     <p>Сочетает навыки разбойника и темной магии.</p>
+                    <div class="class-details hidden">
+                        <p>Мастер скрытности и телепортаций, наносит урон ядами и проклятиями.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -107,8 +136,8 @@
             <p>Все права на игру принадлежат Larian Studios.</p>
         </div>
     </footer>
-    <script src="../main/theme.js"></script>
 
-    <script src="js/classes.js"></script>
+    <script src="../main/theme.js"></script>
+    <script src="../main/js/classes.js"></script>
 </body>
 </html>
