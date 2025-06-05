@@ -162,7 +162,6 @@ a:hover {
     font-size: 1.2rem;
 }
 
-/* Подвал внизу */
 footer {
     background-color: var(--header-color);
     color: var(--nav-text);
@@ -173,7 +172,6 @@ footer {
     font-size: 0.8rem;
 }
 
-/* Адаптация для мобильных */
 @media (max-width: 768px) {
     header {
         padding: 0.4rem 1rem;
@@ -245,7 +243,7 @@ footer {
         padding: 1rem;
     }
 }
-/* Центровка всего основного контента */
+
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -253,12 +251,10 @@ footer {
     text-align: center;
 }
 
-/* Центровка текста */
 main h2, main p {
     text-align: center;
 }
 
-/* Стили для карусели */
 .character-carousel {
     overflow-x: auto;
     white-space: nowrap;
@@ -296,7 +292,6 @@ main h2, main p {
     border-radius: 10px;
 }
 
-/* Центровка карточек персонажей */
 .character-list {
     display: flex;
     flex-direction: column;
@@ -304,7 +299,6 @@ main h2, main p {
     gap: 40px;
 }
 
-/* Стили карточек */
 .character-card {
     background: #f8f8f8;
     padding: 20px;
@@ -322,7 +316,6 @@ main h2, main p {
     margin-bottom: 15px;
 }
 
-/* Кнопка "Показать описание" */
 .toggle-info {
     margin-top: 10px;
     padding: 10px 16px;
@@ -330,7 +323,6 @@ main h2, main p {
     cursor: pointer;
 }
 
-/* Описание персонажа (скрыто по умолчанию) */
 .character-info {
     display: none;
     margin-top: 15px;
@@ -340,7 +332,7 @@ main h2, main p {
 .character-info.active {
     display: block;
 }
-/* Кнопка переключения темы */
+
 #theme-toggle {
   background: transparent;
   border: none;
@@ -354,7 +346,6 @@ main h2, main p {
   transform: scale(1.2);
 }
 
-/* Темы: светлая (по умолчанию) и тёмная */
 :root {
   --bg-color: #f5f5f5;
   --text-color: #333;
@@ -424,7 +415,6 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Специфичные стили для баннера */
 .intro img {
   width: 100%;
   max-height: 400px;
@@ -432,7 +422,6 @@ img {
   margin-bottom: 1.5rem;
 }
 
-/* Стили для изображений в разделе особенностей */
 .features img {
   width: 100%;
   max-height: 250px;
@@ -440,7 +429,6 @@ img {
   margin-bottom: 1rem;
 }
 
-/* Адаптация для мобильных устройств */
 @media (max-width: 768px) {
   .intro img {
     max-height: 250px;
@@ -461,9 +449,29 @@ img {
   }
 }
 
-/* Сохраняем существующие стили для других изображений */
 .card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
+game-mechanics 
+        
+        .game-mechanics h3 {
+            color: #043d76;
+            margin-top: 0;
+        }
+        
+        .mechanics-section {
+            margin-bottom: 25px;
+        }
+        
+        .element-combo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+       
+        
+        
